@@ -28,5 +28,6 @@ a:hover
   background: limegreen;
   box-shadow: 0 0 10px limegreen, 0 0 40px limegreen, 0 0 80px limegreen;
   overflow: hidden;
+  letter-spacing: 8px;
   transition: .2s;
 }

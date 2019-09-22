@@ -6,15 +6,67 @@
   </head>
 
   <body>
-    <h1 class = "type"></h1>
-    <script type="text/javascript" src="typed.js"></script>
-    <script type="text/javascript">
-        var typed = new Typed(".type", {
-          strings: ["Welcome to INVESTEA. We are a service that checks your savings account and tell you how 'healthy' your current balance is in conjunction with your yearly goals. We believe in a calming user experience that visually rewards a person for saving enough money to reach a financial milestone."]
-         , typeSpeed: 10 , loop: false
-        })
+        <!--header-->
+      <div style="width:100%;">
+        
+          <center><a href="index.html">
+              InvesTea
+              </a></center>
+        <br />
+        <br />
+        <br />
+        <br />
+
+
+        <div style="float:left; width:40%; padding: 10; margin: 10">
+          <!--Left Side-->
+            <h1 class = "type"></h1>
+            <script type="text/javascript" src="typed.js"></script>
+            <script type="text/javascript">
+                var typed = new Typed(".type", {
+                  strings: ["Welcome to INVESTEA. We are a service that checks your savings account and tells you how 'healthy' your current balance is in conjunction with your yearly goals. We believe in a calming user experience that visually rewards a person for saving enough money to reach a financial milestone."]
+                 , typeSpeed: 20 , loop: false
+                })
+            
+            
+          </script>
+        </div>
+
+
+        <div style="float:right; width:40%; padding: 50px">
+        <!-- Right side -->
+         <form>
+           First Name:
+           <br>
+           <input type="text" name="firstname" required><br>
+           Last name: <br>
+           <input type = "text" name = "lastname" required>
+           <br>
+           Email: <br>
+           <input type="email" name="email" required> <br>
+           Passoword:<br>
+           <input type="password" id="myInput" name="password" minlength="8" value="" required><br>
+          <input type="checkbox" onclick="myFunction()"> Show password<br><br>
+          <a href="login.html">Sign Up</a>
+         </form>
+          
+         <script>
+         function myFunction()
+         {
+           var x = document.getElementById("myInput");
+           if(x.type === "password"){
+             x.type = "text";
+           }
+           else{
+             x.type = "password";
+           }
+         }</script>
+          
+        </div>
+      </div>
+        
+        
+
     
-    
-  </script>
   </body>
 </html>
